@@ -13,17 +13,27 @@ Python: 2.7
 PyTorch: 0.4.0
 
 CUDA: 9.2
+
+## Installed Libraries
+conda create -y -n py27 python=2.7
+conda activate py27
+conda install pytorch=0.4.0 cuda92 -c pytorch
+conda install torchvision==0.2.2 -c pytorch
+conda install h5py
+pip install opencv-python==3.4.2.16
+conda install numba 
+
+
 ## Ground Truth
 
 Please follow the `make_dataset.ipynb ` to generate the ground truth. It shall take some time to generate the dynamic ground truth. Note you need to generate your own json file.
 
 ## Training Process
-
 Try `python train.py train.json val.json 0 0` to start training process.
 
 ## Validation
-
 Follow the `val.ipynb` to try the validation. You can try to modify the notebook and see the output of each image.
+
 ## Results
 
 ShanghaiA MAE: 66.4 [Google Drive](https://drive.google.com/open?id=1Z-atzS5Y2pOd-nEWqZRVBDMYJDreGWHH)
