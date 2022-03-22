@@ -16,11 +16,17 @@ CUDA: 9.2
 
 ## Installed Libraries
 conda create -y -n py27 python=2.7
+
 conda activate py27
+
 conda install pytorch=0.4.0 cuda92 -c pytorch
+
 conda install torchvision==0.2.2 -c pytorch
+
 conda install h5py
+
 pip install opencv-python==3.4.2.16
+
 conda install numba 
 
 
